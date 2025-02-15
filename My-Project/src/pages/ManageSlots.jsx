@@ -36,6 +36,7 @@ const ManageSlots = () => {
 
     setName("");
     setStartTime("");
+    alert(`New slot added`);
   };
 
   const handleCopyAvailability = () => {
