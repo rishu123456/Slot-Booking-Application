@@ -1,30 +1,67 @@
-<!-- DO NOT REMOVE EXISTING CONTENTS OF THIS FILE, EVEN IN YOUR REPOSITORY -->
-# Frontend assignment repository template
 
-This is a template repository for submitting assignment for the Frontend developer internship at Zelthy. All those who are submitting the frontend assignment must use this template.
+## 🔧 Installation & Setup
 
-Assignment link: https://zelthy.com/assignments/frontend-intern
+### 1️⃣ Prerequisites
+Make sure you have the following installed:
+- **Node.js** (>=14.0.0) - [Download](https://nodejs.org/)
+- **npm** (Comes with Node.js) or **yarn** (optional)
 
-Submission form: https://forms.gle/o8tUdshRWS33tg8X6
+### 2️⃣ Clone the Repository
+Open your terminal and run:
+```sh
+git clone https://github.com/your-username/slot-booking-app.git
+cd slot-booking-app
 
-### How to use this template?
+# 📌 Slot Booking Application
 
-1. If you are reading this on GitHub, click the "use this template" dropdown in the top right corner of the page and select "Create a new repository".
-<img width="1470" alt="Screenshot 2025-02-07 at 6 10 26 PM" src="https://github.com/user-attachments/assets/360f44ae-57e8-4c47-b768-cbfd95b3aa0a" />
+A **fully responsive** and **user-friendly** Slot Booking Application built with **React.js and Tailwind CSS**. This app allows users to **create, manage, and book slots**, supporting **dark mode** for better usability.
 
-2. Next you will be redirected to create a new repository page on GitHub with this repository as a template. Fill the repository name and description and click "Create repository".
-<img width="1470" alt="Screenshot 2025-02-07 at 3 09 25 PM" src="https://github.com/user-attachments/assets/17bd7a00-99fb-4ff6-8003-4b96506189f3" />
+---
 
-3. And thats it! A new repository using this template has been created for you!
+## 🚀 Features
 
-### How to submit the assignment?
+### ✅ 1. User Authentication (LocalStorage Based)
+- Users have to **set a username** and register when they first access the app.
+- And after that user can Login and use the functionalities of the app.
+- The username is **stored in `localStorage`**, ensuring session persistence.
 
-1. Clone the repository that you created using the instructions above.
+### ✅ 2. Slot Management
+- **Create Slots:** Users can create slots with a **name, date, and time**.
+- **Edit Slots:** Modify slot details including **name and timing**.
+- **Delete Slots:** Remove unnecessary slots.
 
-2. Add and commit your changes to that repository.
+### ✅ 3. Booking System
+- **Same user can not book their own slots if we want to check booking functionality we have to logout and register with other username and then login and can now book the available slots of other user if any user has made any slot**.
+- **Users can book slots** created by other users.
 
-3. Push the changes to github.
+### ✅ 4. Timezone Support 🌎
+- Users can **select their preferred timezone**.
+- Slot timings **convert and display according to the selected timezone**.
 
-4. Go to the submission form and fill the details and submit the assignment.
+### ✅ 5. Copy Slot
+- user can copy slots on specific dates if their is already any slot available on a day from which user want to copy**.
 
-## Happy coding!
+---
+
+### ✅ 6. Profile Section
+- **Users can go to their Profile Page to view or update their username.
+Ensures a personalized experience**.
+- ** Also user can update their profile detail in profile page**
+
+### ✅ 7. My Booking 
+- **Users can go to their My Booking page to view their all bookings**.
+- **My Bookings Page** shows the slots a user has booked.
+
+### ✅ 8. Responsive UI
+- Optimized for **desktop, tablet, and mobile**.
+- Uses **Tailwind CSS** for styling and responsiveness.
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** React.js, Tailwind CSS  
+- **State Management:** React Context API  
+- **Date Handling:** Day.js  
+- **Deployment:** Vercel   
+
+---
