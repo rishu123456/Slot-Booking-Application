@@ -8,17 +8,17 @@ Make sure you have the following installed:
 
 ### 2️⃣ Clone the Repository
 Open your terminal and run:
-```sh
+
 git clone https://github.com/your-username/slot-booking-app.git
 cd slot-booking-app
 
-# 📌 Slot Booking Application
+### 📌 Slot Booking Application
 
 A **fully responsive** and **user-friendly** Slot Booking Application built with **React.js and Tailwind CSS**. This app allows users to **create, manage, and book slots**, supporting **dark mode** for better usability.
 
 ---
 
-## 🚀 Features
+### 🚀 Features
 
 ### ✅ 1. User Authentication (LocalStorage Based)
 - Users have to **set a username** and register when they first access the app.
