@@ -5,10 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(),
     tailwindcss()
-  ],
-  build: {
-    rollupOptions: {
-      external: ['react', 'react-dom'], 
-    },
-  },
+  ]
 })
