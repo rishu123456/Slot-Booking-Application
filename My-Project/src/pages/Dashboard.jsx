@@ -1,5 +1,6 @@
 import { useSlots } from "../context/SlotContext";
-import SlotCard from "../components/SlotCard";
+import SlotCard from "../components/Slotcard";
+import TimezoneSelector from "../components/TimezoneSelector";
 
 const Dashboard = () => {
   const { slots, username } = useSlots();
@@ -8,31 +9,39 @@ const Dashboard = () => {
   const otherUsersSlots = slots.filter(slot => slot.user !== username);
 
   return (
-    <div className="p-6">
-      <h2 className="text-2xl font-bold mb-4">Available Slots</h2>
+    <div className="p-6 ">
 
-      {/* Slots from Other Users */}
+      <div className="flex flex-col md:flex-row justify-between items-center mb-6 bg-gray-100 p-4">
+        <h3 className="text-2xl font-bold">Dashboard</h3>
+        <TimezoneSelector />
+      </div>
+
+      <h3 className="text-2xl font-bold  mb-4">
+        Slots from other users
+      </h3>
       {otherUsersSlots.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="flex flex-wrap gap-3 justify-start">
+
+
           {otherUsersSlots.map(slot => (
             <SlotCard key={slot.id} slot={slot} />
           ))}
         </div>
       ) : (
-        <p>No available slots from other users.</p>
+        <p className="text-gray-500">No available slots from other users.</p>
       )}
 
-      <h2 className="text-2xl font-bold mt-6 mb-4">My Slots</h2>
 
-      {/* My Slots */}
+      <h2 className="text-2xl font-bold mt-8 mb-4">My Slots</h2>
       {mySlots.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="flex flex-wrap gap-3 justify-start">
+
           {mySlots.map(slot => (
             <SlotCard key={slot.id} slot={slot} />
           ))}
         </div>
       ) : (
-        <p>You haven't created any slots yet.</p>
+        <p className="text-gray-500">You haven't created any slots yet.</p>
       )}
     </div>
   );

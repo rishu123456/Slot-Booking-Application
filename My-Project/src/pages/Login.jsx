@@ -39,7 +39,7 @@ const LoginPage = () => {
     const updatedUsers = [...users, inputUsername];
     localStorage.setItem("users", JSON.stringify(updatedUsers));
     setUsers(updatedUsers);
-    setError(""); // Clear any previous errors
+    setError("");
     alert("User registered successfully! You can now log in.");
   };
 
