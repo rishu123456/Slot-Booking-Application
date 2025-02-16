@@ -10,8 +10,12 @@ Make sure you have the following installed:
 Open your terminal and run:
 
 git clone https://github.com/rishu123456/Slot-Booking-Application
-cd slot-booking-app
-cd My-Project
+- cd Slot-Booking-Application/My-Project
+- npm install 
+- npm run dev
+
+
+
 
 ### or
  clone the repo using git clone https://github.com/rishu123456/Slot-Booking-Application
@@ -19,8 +23,8 @@ and copy the path of My-Project and run command,
 - cd "copied_path" 
 
 ### then 
-npm install 
-npm run dev
+- npm install 
+- npm run dev
 
 
 
